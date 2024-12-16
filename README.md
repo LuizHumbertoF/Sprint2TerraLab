@@ -1,6 +1,35 @@
 # DESAFIO TYPESCRIPT
 
-Use esse espaço para responder às questões teóricas:
+1. TypeScript é uma extensão do JavaScript que adiciona recursos como tipagem estática, interfaces, classes e herança, permitindo maior segurança e escalabilidade no desenvolvimento de aplicações. Ele é compilado para JavaScript puro, sendo compatível com qualquer ambiente que suporte JavaScript.
+
+2. Os tipos básicos do TypeScript incluem:
+
+number: Para números inteiros ou de ponto flutuante.
+string: Para cadeias de caracteres.
+boolean: Para valores lógicos verdadeiro ou falso.
+any: Permite qualquer tipo.
+void: Para funções que não retornam valor.
+undefined e null: Representam valores indefinidos ou nulos.
+array: Para listas de elementos de um tipo específico.
+tuple: Para arrays com número fixo de elementos e tipos definidos.
+enum: Para conjuntos de valores nomeados.
+never: Para funções que nunca retornam.
+object: Para objetos que não são tipos primitivos.
+
+3. Uma interface define a forma de um objeto, especificando seus campos e tipos. É usada para garantir que um objeto ou classe siga um contrato predefinido, aumentando a consistência e organização no código.
+
+4. Uma classe é um modelo que encapsula propriedades e comportamentos de objetos, permitindo a criação de instâncias com características definidas. As classes seguem os princípios da Programação Orientada a Objetos (POO) e suportam métodos, construtores e modificadores de acesso.
+
+5. Herança é um mecanismo da POO em que uma classe pode herdar propriedades e métodos de outra classe, promovendo o reaproveitamento de código e a extensão de funcionalidades.
+
+6. Tipagem estática: Detecta erros em tempo de compilação.
+Facilidade de manutenção: Ajuda a organizar e refatorar projetos grandes.
+Melhor suporte do editor: Oferece autocompletar e verificação de tipos.
+Suporte a POO: Implementação de conceitos como classes e herança.
+Escalabilidade: Ideal para projetos de grande porte e trabalho em equipe.
+Compatibilidade: Permite o uso de código JavaScript e facilita a transição.
+Organização: Oferece módulos, namespaces e integração com bibliotecas.
+
 
 ## Instruções
 Para executar o projeto, primeiro rode o comando: ```npm i``` para baixar as dependências do projeto.

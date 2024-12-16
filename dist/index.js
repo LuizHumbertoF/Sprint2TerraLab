@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var bankAccount_1 = require("./models/bankAccount");
-var user_1 = require("./models/user");
+const bankAccount_1 = require("./models/bankAccount");
+const user_1 = require("./models/user");
 var user = (0, user_1.createUser)({ name: 'John Doe', age: 21 });
 // TODO - pegar usuário criado e passar como parâmetro para a função createBankAccount
 var bankAccount = (0, bankAccount_1.createBankAccount)(user, { agency: '0001' });

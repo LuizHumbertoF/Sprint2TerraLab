@@ -1,25 +1,25 @@
-import { v4 as uuidv4 } from 'uuid';
-
-const users = [];
-
-export function createUser(user) {
-  user.id = uuidv4();
-
-  users.push(user);
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.removeUser = exports.getUserByEmail = exports.updateUser = exports.createUser = void 0;
+var uuid_1 = require("uuid");
+var users = [];
+function createUser(user) {
+    user.id = (0, uuid_1.v4)();
+    users.push(user);
+    return user;
 }
-
-export function updateUser(user) {
-  const index = users.findIndex((item) => item.id === user.id);
-
-  users[index] = user;
+exports.createUser = createUser;
+function updateUser(user) {
+    var index = users.findIndex(function (item) { return item.id === user.id; });
+    users[index] = user;
 }
-
-export function getUserByEmail(id) {
-  return users.find((item) => item.email === email);
+exports.updateUser = updateUser;
+function getUserByEmail(email) {
+    return users.find(function (item) { return item.email === email; });
 }
-
-export function removeUser(id) {
-  const index = users.findIndex((item) => item.id === id);
-
-  users.splice(index, 1);
+exports.getUserByEmail = getUserByEmail;
+function removeUser(id) {
+    var index = users.findIndex(function (item) { return item.id == id; });
+    users.splice(index, 1);
 }
+exports.removeUser = removeUser;
